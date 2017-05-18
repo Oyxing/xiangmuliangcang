@@ -1,0 +1,65 @@
+body {
+  position: relative;
+  width: 100%;
+  font-size: 12px;
+  font-family: 'Hiragino Sans GB','冬青黑体','Hiragino Kaku Gothic ProN','Microsoft Yahei' ,'Simsun','Arial', 'Helvetica', 'sans-serif';
+  line-height: 1.428;
+  margin: 0;
+  padding: 0;
+
+}
+*{
+	color: black;
+	list-style: none;
+  text-decoration: none;
+}
+.fr{float: right;}
+.fl{float:left;}
+/*头部*/
+.header-top{width: 100%;height:56px;background-color: #000}
+.header{width: 1000px;height:56px;margin: 0 auto;position: relative;}
+.log a{background:url(../img/icon.png)no-repeat 0px 9px;width: 100px;height: 49px;position: absolute;}
+.nav li{float: left;}
+.nav li >a{color: #666;}
+.login-reg-btn{margin-right: 20px;line-height: 30px;}
+.cart-wrapper{margin-right: 20px;line-height: 30px;}
+.posr{margin-right: 20px;line-height: 30px;}
+.add{margin-right: 10px;line-height: 30px;}
+.line{width: 1px; height: 10px;background-color: #525961;margin-left: -10px;margin-top: 11px;}
+.cart-wrapper .cart{display: none;z-index:999; width: 320px;height: 100px; background-color: #292F34;color: white; position: absolute;margin-top: 14px;margin-left: -80px;text-align: center;}
+.cart-wrapper .cart .shop{width: 320px;height: 50px;background-color: blue;color: white;line-height: 50px;text-align: center;}
+.posr .posrnav {display: none; position: absolute;z-index:999;width: 160px;height:260px;background-color: #292F34;margin-top: 13px;margin-left: -55px;}
+.posr .posrnav a span{display: inline-block;width:100%;height: 42px;line-height: 44px;padding: 0;border-bottom: 1px solid #3f4449;color: #ccc;font-size: 12px;}
+.switchover{overflow: hidden; width: 1000px;height: 312px;position: relative;top: -24px;margin-left: 13%;}
+.switchover .ul1{width: 1000px;height: 50px;border-bottom: 5px solid #CCCCCC;line-height: 50px;}
+.switchover	.ul1 li{width: 150px; float: left;font-size: 15px;text-align: center;}
+.switchover	.ul1 .seek{ width: 38px;height: 36px;float: left;margin-left: 216px;margin-top: 4px;background: url(../img/icon.png)no-repeat;background-position: -167px -145px;}
+.switchover	.ul1 .seek-seek{height: 34px;float: left;margin-left: 959px;border: 1px solid white;margin-top: 4px;position: absolute;}
+.switchover	.ul1 .seek-seek1{height: 88%;float: left;border: 1px solid white; outline: none;}
+.switchover	.ul1 .link{width:202px;height: 4px;float: left;border: 1px solid #666666;margin-top: 44px;position: absolute;background-color: #666666;}
+/*切换*/
+.switchover	.ul2{position: relative;width: 1000px;height: 100px;background-color: #707375;z-index:999;}
+.switchover	.ul2 .store{width: 1000px;height: 355px;position: absolute; z-index: 999;background-color:#1e3544;margin-left: -40px;}
+.switchover	.ul2 .store .storenav{width: 80px;height: 80px;background-color: white;margin-left: 10px;}
+.switchover	.ul2 .store .storenav-wore{float: left;width: 80px;height: 20px;font-size: 15px;text-align: center;line-height: 20px;margin-top: -25px;}
+.switchover	.ul2 .store .storenav {float: left;}
+
+
+.switchover	.ul2 .magazine{width: 1000px;height: 200px;position: absolute; z-index: 999;background-color:#1988d2;margin-left: -40px;}
+.switchover	.ul2 .share{width: 1000px;height: 200px;position: absolute; z-index: 999;background-color:#692f2f;margin-left: -40px;}
+.switchover	.ul2 .store{width: 1000px;height: 200px;position: absolute; z-index: 999;background-color:#707375;margin-left: -40px;}
+.switchover	.bom{border-bottom: 5px solid #666666;}
+/*轮播*/
+#bander {width: 1000px;height: 475px;border: 1px solid white;margin: -25px auto;overflow: hidden;margin-top: 200px}
+#bander img{width:1000px;height: 475px;}
+.bander-tu {width: 9000px;height: 475px;margin-left: 0px;margin-top: 0px;}
+.bander-tu li {float: left;}
+
+/*小标*/
+.bander-tu-sub {position: absolute;margin-left: 290px;margin-top: 0px;}
+.bander-tu-sub li {float: left;width: 20px;height: 5px;border: 2px solid bisque; line-height: 20px;text-align: center; margin-left: 20px;}
+.bander-tu-sub .sub {background-color: #25292E;}
+#bander-left {/*display: none;*/position: absolute;background: url(../../guide/jQuery/day2/demo/jiaoben3635/css/img/prev.png)no-repeat center;width: 30px;height: 50px;margin-left: 7px;margin-top: 220px;}
+#bander:hover #bander-left{display: block;}
+#bander:hover #bander-right{display: block;}
+#bander-right {/*display: none;*/position: absolute;background: url(../../guide/jQuery/day2/demo/jiaoben3635/css/img/next.png)no-repeat center;width: 30px;height: 50px;margin-left: 970px;margin-top: 220px}

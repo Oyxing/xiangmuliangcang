@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/liangcang.css">
+    <title><Link rel="shortcut icon" href="../../img/level_tworvice/blizzard.png"><img src="img/favicon.ico"/></title>
+
+  </head>
+  <body>
+    <header class="header-top">
+        <div class="header">
+        	<!--图标-->
+          <div class="log">
+              <a href="liangcang.html"></a>
+          </div>
+          <ul class="nav fr" id="nav">
+          	<li	class="login-reg-btn">
+          		<a class="loginbtn" href="dome/denglu.html" style="color: white;">登录</a>
+          		<a class="regbtn" href="dome/zhuce.html" style="color: white;">注册</a>
+          	</li>
+          	<li class="line"></li>
+          	<li class="cart-wrapper"style="width: 36px;height: 55px;"><a href="#" >购物车</a>
+          			<div class="cart dropbox">
+          					<div class="carts">
+          							<p>你的购物车暂无商品....</p>
+          					</div>
+          					<div class="shop">
+          							<a href="#" class="shop">快去抢购粮仓商品吧!</a>
+          					</div>
+          			</div>
+          	</li>
+          	<li class="line"></li>
+          	<li class="posr"style=" width: 24px;height: 56px;"><a href="#">消息</a>
+          		<div class="posrnav dropbox">
+          				<a href="#"><span>动态</span></a>
+          				<a href="#"><span>评论</span></a>
+          				<a href="#"><span>私信</span></a>
+          				<a href="#"><span>粉丝</span></a>
+          				<a href="#"><span>喜欢</span></a>
+          				<a href="#"><span>通知</span></a>
+          		</div>
+          	</li>
+          	<li class="line"></li>
+          	<li class="add"><a href="#" class="food">添加良品 </a></li>
+          </ul>
+        </div>
+    </header>
+    <header class="switchover">
+    	<ul class="ul1">
+					<li class="bom" style="margin-left: -39px;text-align: inherit;"><a href="#">首页</a></li>
+					<li><a href="#">商店</a></li>
+					<li><a href="#">杂志</a></li>
+					<li><a href="#">分享</a></li>
+					<li><a href="#">达人</a></li>
+					<a href="#"><div class="seek">
+					</div>
+						<div class="seek-seek bom">
+								<input type="text" name="stauts"  class="seek-seek1" placeholder="serick"/>
+								<div class="link seek-seek1"></div>
+						</div>
+					</a>
+    </ul>
+		<ul class="ul2 fl">
+			<li class="onepage" style="display: block;"></li>
+			<li class="store" style="display:inline-block;">
+        <div class="storenav">
+                <a href="#"><img src="img/23668.png" alt="">
+                		<div class="storenav-wore">书</div>
+                </a>
+        </div>
+        <div class="storenav">
+                <a href="#"><img src="img/23668.png" alt="">
+                		<div class="storenav-wore">书</div>
+                </a>
+        </div>
+        <div class="storenav">
+                <a href="#"><img src="img/23668.png" alt="">
+                		<div class="storenav-wore">书</div>
+                </a>
+        </div>
+      </li>
+			<li class="magazine" style="display:inline-block;">杂志</li>
+			<li class="share" style="display:inline-block;" >分享</li>
+			<li class="expert" style="display:inline-block;">达人</li>
+		</ul>
+   </header>
+			  <div id="bander">
+			   		<div id="bander-right"></div>
+						<div id="bander-left"></div>
+						<ul class="bander-tu left">
+							<img src="img/1008.jpg"/>
+						</ul>
+						<ul class="bander-tu-sub left">
+							<li class="sub"></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+
+		</div>
+		<!--轮播图-->
+		<script type="text/template"  id="template">
+							<li>
+							<a href="<%= thumb %>">
+							<img src="<%= url %>"/>
+							</a></li>
+		</script>
+
+  </body>
+   	<script src="js1/jquery.js" charset="utf-8"></script>
+    <script src="http://apps.bdimg.com/libs/underscore.js/1.7.0/underscore-min.js" charset="utf-8"></script>
+    <script src="js/liangcang.js" charset="utf-8"></script>
+    <script src="js1/fengzhuang_ajax.get.post.js" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	    <script type="text/javascript">
+	    		$("li").mouseenter(function(){
+	            // 函数节流
+	            var self = $(this).find(".dropbox");
+	            if(self.is(":animated")){
+	                return;
+	            }
+	            self.show();
+	       })
+	        $("li").mouseleave(function(){
+	            var self = $(this).find(".dropbox");
+	            self.hide();
+	        })
+	    </script>
+	    <!--选项卡-->
+	    <script type="text/javascript">
+					$(".ul1 li").mousemove(function(){
+						var i=$(this).index()
+						$(this).addClass('bom').siblings().removeClass('bom');
+			      $('.ul2 li').eq(i).show().siblings().hide();
+					})
+					//搜索
+					console.log($(".seek"))
+					var x = 1;
+					$(".seek").click(function(){
+								if(x==1){
+								$(".seek-seek").animate({marginLeft:"755px"},1000);
+									x=0
+							}else{
+										$(".seek-seek").animate({marginLeft:"959px"},1000);
+									x=1
+							}
+					})
+	         </script>
+			<!--搜索框-->
+			<script type="text/javascript">
+						console.log($(".seek-seek"))
+////					$(".seek").click(function(){
+//						var search_text = $(".seek-seek").val()
+//							$.ajax({
+//								        url:"http://lc.shudong.wang/api_goods.php",
+//								        type: 'get',
+//								        data:{"search_text":search_text},
+//								      success : function(data){
+//								        		console.log(data);
+//								        }
+//								      })
+////						})
+		  </script>
+
+		<!--轮播图-->
+		<script type="text/javascript">
+					var templateStr = $("#template").html();
+					var tempStr = _.template(templateStr);
+					function bannder(page){
+								$.ajax({
+								        url:"http://lc.shudong.wang/api_ad.php?position_id="+page,
+								        type: 'get',
+								      	success : function(data){
+								        		var obj = JSON.parse(data).data
+								        		$.each(obj,function(index,vl){
+															var dataStr = tempStr(vl);
+															var domobj = $(dataStr);
+															$(".bander-tu").append(domobj);
+														})
+								        }
+								     })
+
+						}
+					var page = 1;
+					bannder(page)
+		</script>
+			<!--导航-->
+		<script type="text/javascript">
+//			http://lc.shudong.wang/api_cat.php
+
+
+
+		</script>
+
+
+</html>

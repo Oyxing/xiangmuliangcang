@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>用户登录</title>
+		<link rel="stylesheet" type="text/css" href="../css/denglu.css"/>
+		<script src="../js1/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		
+		<div id="main">
+			<div class="logtu">
+				<a href="../liangcang.html"><img src="../img/nlicon.png"/></a>
+			</div>
+			<div class="formrefer">
+					<form action="../liangcang.php" method="post">
+						<div id="phone">
+							<img src="../img/nlphone.png"/>
+							<input type="text" name="name" class="phone" placeholder="用户名"/><span class="correct1"></span><br />
+						</div>
+						<div id="ver">
+							<img src="../img/nlcode.png" style="margin-top: -25px;position: absolute;"/>
+							<input type="password" name="passwrod" class="ver" placeholder="密码"/></div><span class="correct"></span>
+						<br />
+						<div id="automatic">
+							<input type="checkbox" name="" class="automatic" value=""/>自动登录<br />	
+						</div>
+					<input type="button" value="登录"  class="enter btn"/><br />
+					<a href="#" class="numenter">更多方式登录>></a>
+				</form>
+			</div>	
+		</div>
+			<script type="text/javascript">	
+				 $(".btn").click(function(){	
+					var username = $(".phone").val();
+					var password = $(".ver").val();
+					var correct = $(".correct");
+					var correct1 = $(".correct1");
+						$.ajax({
+							url:"http://h6.duchengjiu.top/shop/api_user.php",
+							type: 'post',
+							data:{"status":"login","username":username,"password":password},
+							success : function(data){
+								var obj = JSON.parse(data)
+							    var	code = obj.code;
+							    switch (code){
+							    	case 0:
+									location.href="../liangcang.html";	
+							    		break;
+							    	case 1001:
+										correct.html("密码错误！！")	
+							    		break;
+							    	case 1000:
+										correct1.html("用户名错误,格式不正确！！")	
+							    		break;	
+							    	default:
+							    		break;
+							    }
+							}   
+						})
+								
+				})
+			</script>
+	</body>
+</html>

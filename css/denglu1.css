@@ -1,0 +1,29 @@
+body {
+    position: relative;
+    width: 100%;
+    font-size: 12px;
+    font-family: 'Hiragino Sans GB','冬青黑体','Hiragino Kaku Gothic ProN','Microsoft Yahei' ,'Simsun','Arial', 'Helvetica', 'sans-serif';
+    line-height: 1.428;
+    margin: 0;
+    padding: 0;
+}
+*{list-style: none;text-decoration: none;}
+a{color: black;}
+.layerMask{position: fixed; top: 0;right: 0;bottom: 0;left: 0;background: #5e6177;opacity: 0.4;}
+#main{width: 565px;height: 640px;margin: 70px auto;position: relative;}
+.registetu{width: 226px;height: 106px;position: absolute;margin-left: 170px;margin-top: 50px;}
+#registet-form{width: 550px;height: 460px;margin-top: 190px;position: absolute;margin-left:8px;}
+#registet-form div input{font-size: 16px;font-weight: bold;color: white;}
+#registet-form div .phone,#registet-form div .var1{outline: none;text-indent: 80px;border: 1px solid #CBCBCB;background-color: #CBCBCB; margin-top: 23px;width: 320px;height: 50px;margin-left: 46px;}
+#registet-form div{color: #ffffff;font-size: 16px;font-weight: bold;position: relative;}
+#registet-form div .vartu{margin-top: 20px;}
+#registet-form #agree{margin-left: 108px;margin-top: 30px;font-size: 12px;outline: none;}
+.line{width: 2px;height: 25px; background-color: white;margin-left: 46px;margin-top: -32px;}
+#registet-form .quikLoginIcon{width: 40px;height: 40px;display: inline-block;position: absolute;margin-left: 121px;margin-top: 37px;}
+#registet-form .enroll{width: 320px;height: 50px; margin-left: 113px; margin-top: 20px;background-color: black;color: white; font-size: 20px;outline: none;border: 1px solid black;}
+.external{width: 320px;height: 40px;float: left; margin-top: 480px;margin-left: 120px;}
+.external .quikLoginIcon{width: 36px;height: 36px;display: inline-block;}
+.external .icon_QQ_36{background: url(../img/QQ.png)no-repeat;}
+.external .icon_sina_36{background: url(../img/xinlang.png)no-repeat;}
+.external .icon_douban_36{background: url(../img/douban.png)no-repeat;}
+.external .icon_qqwb_36{background: url(../img/tengxun.png)no-repeat;}

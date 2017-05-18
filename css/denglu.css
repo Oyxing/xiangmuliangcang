@@ -1,0 +1,24 @@
+body {
+    position: relative;
+    width: 100%;
+    font-size: 12px;
+    font-family: 'Hiragino Sans GB','冬青黑体','Hiragino Kaku Gothic ProN','Microsoft Yahei' ,'Simsun','Arial', 'Helvetica', 'sans-serif';
+    line-height: 1.428;
+    margin: 0;
+    padding: 0;
+}
+#main{width: 1000px;margin: 0 auto;height: 550px;margin-top: 20px;}
+.logtu img{float: left;margin-left: 450px;margin-top: 30px;}
+.formrefer a{color: #000000;}
+.formrefer{width: 300px;height: 300px;float: left;margin-left: -190px;margin-top: 300px;}
+.formrefer .phone{width: 300px;height: 35px;outline: none;border: 1px solid white;float: left;margin-top: -35px;text-indent: 30px;}
+.formrefer #phone{border-bottom: 2px solid black;float: left;}
+.formrefer .ver{width: 300px;height: 35px;border: 1px solid white;outline: none;float: left;margin-top: -35px;text-indent: 30px;}
+.formrefer #ver{width: 300px;border-bottom: 2px solid black;float: left;margin-top: 60px;}
+.formrefer .correct{width: 100px;height: 30px;position: absolute;margin-top: 57px;}
+.formrefer .correct1{width: 100px; height: 30px;position: absolute;margin-top: -5px;margin-left: 278px;}
+.formrefer .enter{width: 300px;height: 50px;background-color: #000000;color: white;outline: none;border-radius: 10px;border:1px solid black ;}
+.formrefer .auth{width: 112px;height: 37px;float: left;margin-top: -35px;margin-left: 183px;color: black;background-color: white;border:1px solid black;border-radius: 9px;outline: none;}
+.formrefer #automatic{float: left;}
+.formrefer input{margin-top: 20px;font-size: 20px;}
+.formrefer .numenter{float:left;margin-top: 20px;font-size: 15px;margin-left: 100px;}
