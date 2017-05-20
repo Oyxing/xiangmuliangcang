@@ -74,11 +74,9 @@ var oul = document.getElementsByClassName("bander-tu")[0];
 				//停止a
 				oul.onmouseenter = function() {
 					clearInterval(timer)
-
 				}
 				oul.onmouseleave = function() {
-					timer=setInterval(move,2000)
-
+					timer=setInterval(move,2000);
 				}
 				//左右
 
@@ -88,12 +86,9 @@ var oul = document.getElementsByClassName("bander-tu")[0];
 					if(numsindex <= 0) {
 						numsindex = 8
 					}
-
 					startMove(oul, {
 						"margin-left":numsindex * (-1000)
 					});
-
-
 					console.log(numsindex)
 					for(var i = 0; i < osubli.length; i++) {
 						osubli[i].className = ""
@@ -103,18 +98,14 @@ var oul = document.getElementsByClassName("bander-tu")[0];
 				}
 			right.onclick = function() {
 					clearInterval(timer)
-
 					numsindex++
 					if(numsindex >= 8) {
 						numsindex = 0
 					oul.style.marginLeft = 0;
-
 					}
 					startMove(oul, {
 						"margin-left": numsindex * (-1000)
 					});
-
-
 					console.log(numsindex)
 					for(var i = 0; i < osubli.length; i++) {
 						osubli[i].className = ""

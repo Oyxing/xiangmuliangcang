@@ -51,24 +51,6 @@ $(".ul1 li").mousemove(function() {
 ////								      })
 //////						})
 
-//轮播图
-var templateStr = $("#template").html();
-var tempStr = _.template(templateStr);
-$.ajax({
-	url: "http://lc.shudong.wang/api_ad.php?position_id=1",
-	type: 'get',
-	success: function(data) {
-		var obj = JSON.parse(data).data
-		//								        		console.log(obj)
-		$.each(obj, function(index, vl) {
-			var dataStr = tempStr(vl);
-			//															console.log(dataStr)
-			var domobj = $(dataStr);
-			$(".bander-tu").append(domobj);
-		})
-	}
-})
-
 //导航
 //			http://lc.shudong.wang/api_cat.php
 //创建div
@@ -100,7 +82,7 @@ var shoplistStr = $("#shopList").html();
 var plateStr = _.template(shoplistStr);
 var oitem
 $.ajax({
-	url: "http://lc.shudong.wang/api_goods.php?goods_id=0&page=2&pagesize=18",
+	url: "http://lc.shudong.wang/api_goods.php?goods_id=0&page	=1&pagesize	=18",
 	type: 'get',
 	success: function(data) {
 		var obj = JSON.parse(data).data
@@ -209,9 +191,10 @@ setTimeout(function() {
 
 //小手
 $(".hand1").mouseover(function(){
-						$(".hand").animate({marginLeft:"-60px"},1000)
-						$(".hand").animate({marginLeft:"-50px"},1000)
-						$(".hand").animate({marginLeft:"-60px"},1000)
-						$(".hand").animate({marginLeft:"-50px"},1000)
+						
+				$(".hand").animate({marginLeft:"-60px"},1000)
+				$(".hand").animate({marginLeft:"-50px"},1000)
+				$(".hand").animate({marginLeft:"-60px"},1000)
+				$(".hand").animate({marginLeft:"-50px"},1000)
 								
 			})
