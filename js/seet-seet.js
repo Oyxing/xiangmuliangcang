@@ -22,35 +22,59 @@ $(".ul1 li").mousemove(function() {
 	$('.ul2 li').eq(i).show().siblings().hide();
 })
 ////搜索
-//console.log($(".seek"))
-//var x = 1;
-//$(".seek").click(function() {
-//	if(x == 1) {
-//		$(".seek-seek").animate({
-//			marginLeft: "755px"
-//		}, 1000);
-//		x = 0
-//	} else {
-//		$(".seek-seek").animate({
-//			marginLeft: "959px"
-//		}, 1000);
-//		x = 1
-//	}
-//})
-//
-////搜选框
-//////					$(".seek").click(function(){
-////						var search_text = $(".seek-seek").val()
-////							$.ajax({
-////								        url:"http://lc.shudong.wang/api_goods.php",
-////								        type: 'get',
-////								        data:{"search_text":search_text},
-////								      success : function(data){
-////								        		console.log(data);
-////								        }
-////								      })
-//////						})
-
+	console.log($(".seek"))
+	var x = 1;
+	$(".seek").click(function() {
+		if(x == 1) {
+			$(".seek-seek").animate({marginLeft: "755px"}, 1000);
+			x = 0
+		} else {	
+			search()
+				$(".seek-seek").animate({marginLeft: "959px"}, 1000);
+				x = 1
+		}
+	})		
+	function search(text){
+		$seektxt = $(".seek-seek1").val();
+			$(".seetshop").text(">搜索结果>"+text)
+			$(".shopListCon").children().remove();
+			$(".shopListCon").children().remove();
+				var shoplistStr1 = $("#shopList1").html();
+				var plateStr1 = _.template(shoplistStr1);
+				var oitem
+				$.ajax({
+					type: "get",
+					url: "http://lc.shudong.wang/api_goods.php",
+					dataType: "json",
+					data: {search_text: text,},
+					success: function(data) {		
+					console.log(data.code)//0成功
+						var obj = data.data;
+					if(data.code == 0) {
+						$.each(obj, function(index, vl) {
+								var objStr = plateStr1(vl);
+								console.log(objStr)
+								var domobj = $(objStr);
+								$(".shopListCon").append(domobj);
+							})
+							var div = document.createElement("div");
+							div.className="clr";
+							$(".shopListCon").append(div);
+								}else{
+								alert("没有此商品")
+							}
+						}
+					})	
+					$(".seek-seek1").val("")
+	}
+	function chuan(text) {
+		var thisURL = document.URL;
+		var  getval =thisURL.split('?')[1];
+		var showval= getval.split("=")[1];
+		var zhuan=decodeURI(showval);
+		$(".seek-seek1").text(zhuan);
+			search(zhuan);
+				}
 //导航
 //			http://lc.shudong.wang/api_cat.php
 //创建div
@@ -77,25 +101,8 @@ for(var i = 0; i < arr2.length; i++) {
 	$(".share").append(odiv);
 }
 
-//商品
-var shoplistStr = $("#shopList").html();
-var plateStr = _.template(shoplistStr);
-var oitem
-$.ajax({
-	url: "http://lc.shudong.wang/api_goods.php?goods_id=0&page	=1&pagesize	=18",
-	type: 'get',
-	success: function(data) {
-		var obj = JSON.parse(data).data
-		console.log(obj)
-		$.each(obj, function(index, vl) {
-			var objStr = plateStr(vl);
-			var domobj = $(objStr);
-			$(".shopListCon").append(domobj);
+//商店
 
-			$(".item").eq(1).addClass("item")
-		})
-	}
-})
 
 //吸顶
 $(window).scroll(function() {

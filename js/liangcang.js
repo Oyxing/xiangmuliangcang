@@ -22,23 +22,7 @@ $(".ul1 li").mousemove(function() {
 	$('.ul2 li').eq(i).show().siblings().hide();
 })
 ////搜索
-//console.log($(".seek"))
-//var x = 1;
-//$(".seek").click(function() {
-//	if(x == 1) {
-//		$(".seek-seek").animate({
-//			marginLeft: "755px"
-//		}, 1000);
-//		x = 0
-//	} else {
-//		$(".seek-seek").animate({
-//			marginLeft: "959px"
-//		}, 1000);
-//		x = 1
-//	}
-//})
-//
-////搜选框
+//搜选框
 //////					$(".seek").click(function(){
 ////						var search_text = $(".seek-seek").val()
 ////							$.ajax({
@@ -66,6 +50,9 @@ $.ajax({
 			var domobj = $(dataStr);
 			$(".bander-tu").append(domobj);
 		})
+		var div = document.createElement("div");
+		div.className="clr";
+		$(".shopListCon").append(div);
 	}
 })
 

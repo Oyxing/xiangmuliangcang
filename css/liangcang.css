@@ -74,7 +74,7 @@ margin-top: -246px;margin-left: 175px;}
 .hGCtle {padding: 10px 0px; border-bottom: 1px solid #ccc;text-align: center;color: #333;width: 1000px;margin-left: 13%;}
 
 /*购物*/
-#main {width: 1000px;margin: 0 auto;padding-top: 110px;clear: both;}
+#main {width: 1000px;margin-left: 13%; padding-top: 110px;clear: both;}
 #main .styl_3{height: auto;width: 1000px;}
 #main .shopListCon{width: 1000px;float: left; margin: -70px 0px;position: relative;}
 #main .shopListCon div.first {margin-left: 10px;}
