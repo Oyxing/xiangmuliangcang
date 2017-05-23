@@ -21,21 +21,26 @@ $(".ul1 li").mousemove(function() {
 	$(this).addClass('bom').siblings().removeClass('bom');
 	$('.ul2 li').eq(i).show().siblings().hide();
 })
+$(".ul1 li").mouseout(function() {
+	$('.ul2 li').eq(i).show().siblings().hide();
+})
 ////搜索
 	console.log($(".seek"))
 	var x = 1;
 	$(".seek").click(function() {
+		$seektxt = $(".seek-seek1").val()
 		if(x == 1) {
 			$(".seek-seek").animate({marginLeft: "755px"}, 1000);
 			x = 0
-		} else {	
-			search()
+		} else  if(x == 0 && $seektxt == ""){	
 				$(".seek-seek").animate({marginLeft: "959px"}, 1000);
-				x = 1
+				x = 1;
+		}else{
+				search($seektxt)
 		}
 	})		
 	function search(text){
-		$seektxt = $(".seek-seek1").val();
+			$seektxt = $(".seek-seek1").val();
 			$(".seetshop").text(">搜索结果>"+text)
 			$(".shopListCon").children().remove();
 			$(".shopListCon").children().remove();

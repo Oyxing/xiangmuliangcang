@@ -21,19 +21,12 @@ $(".ul1 li").mousemove(function() {
 	$(this).addClass('bom').siblings().removeClass('bom');
 	$('.ul2 li').eq(i).show().siblings().hide();
 })
+$(".ul1 li").mouseout(function() {
+	$('.ul2 li').hide();
+})
 ////搜索
 //搜选框
-//////					$(".seek").click(function(){
-////						var search_text = $(".seek-seek").val()
-////							$.ajax({
-////								        url:"http://lc.shudong.wang/api_goods.php",
-////								        type: 'get',
-////								        data:{"search_text":search_text},
-////								      success : function(data){
-////								        		console.log(data);
-////								        }
-////								      })
-//////						})
+	
 
 //轮播图
 var templateStr = $("#template").html();
@@ -91,7 +84,6 @@ $.ajax({
 	type: 'get',
 	success: function(data) {
 		var obj = JSON.parse(data).data
-		console.log(obj)
 		$.each(obj, function(index, vl) {
 			var objStr = plateStr(vl);
 			var domobj = $(objStr);

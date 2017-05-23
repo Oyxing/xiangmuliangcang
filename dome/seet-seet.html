@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../css/seet-seet.css">
+    <link rel="stylesheet" type="text/css" href="../css/bottom.css"/><link rel="stylesheet" href="../css/seet-seet.css">
+    <link rel="stylesheet" type="text/css" href="../css/top.css"/>
     <title><Link rel="shortcut icon" href="../../img/level_tworvice/blizzard.png"><img src="img/favicon.ico"/></title>
   </head>
   	<body onload="chuan()">
@@ -11,12 +12,16 @@
         <div class="header">
         	<!--图标-->
           <div class="log">
-              <a href="liangcang.html" class="log1"></a>
+              <a href="../liangcang.html" class="log1"></a>
           </div>
           <ul class="nav fr" id="nav">
           	<li	class="login-reg-btn">
-          		<a class="loginbtn" href="dome/denglu.html" style="color: white;">登录</a>
-          		<a class="regbtn" href="dome/zhuce.html" style="color: white;">注册</a>
+          		<div class="usermage">
+          			<a href="#" class="userset"><span>个人设置</span></a>
+          			<a href="#" class="usermasage"><span>收到信息</span></a>
+          			<a href="#" class="userinent"><span>我的订单</span></a>
+          			<a href="#" class="userout"><span>退出</span></a>
+          		</div>  
           	</li>
           	<li class="line"></li>
           	<li class="cart-wrapper"style="width: 36px;height: 55px;"><a href="#" >购物车</a>
@@ -51,7 +56,7 @@
     	<ul class="ul1">
 					<li class="bom" style="margin-left: -39px;text-align: inherit;"><a href="../liangcang.html">首页</a></li>
 					<li><a href="more.html">商店</a></li>
-					<li><a href="#">杂志</a></li>
+					<li><a href="magazine.html">杂志</a></li>
 					<li><a href="#">分享</a></li>
 					<li><a href="#">达人</a></li>
 					<a href="#"><div class="seek">
@@ -104,7 +109,7 @@
 		<div class="clr"></div>
 		
 		<!--尾部顶2-->
-		<div id="service">
+		<div id="service" style="margin-top: 275px;">
 			<a href="#" class="hand1"><p class="hand"></p></a>
 			<div class="slogen">
 					<dl class="fore1">
@@ -272,6 +277,7 @@
     <script src="http://apps.bdimg.com/libs/underscore.js/1.7.0/underscore-min.js" charset="utf-8"></script>
     <script src="../js/seet-seet.js" charset="utf-8"></script>
    	<script src="../js1/fengzhuang_ajax.get.post.js" charset="utf-8"></script>
+		<script src="../js/denglu.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 				//搜索
 			
