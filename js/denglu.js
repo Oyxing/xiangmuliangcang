@@ -1,4 +1,4 @@
-var code = localStorage.getItem("code");
+		var code = localStorage.getItem("code");
 		var username = localStorage.getItem("username");
 		var ologin = document.createElement("a");
 		var oreg = document.createElement("a");
@@ -15,15 +15,12 @@ var code = localStorage.getItem("code");
 		
 				if(code == 0){
 			$(".login-reg-btn").append(oA)
-			
 			$(".login-reg").append(userImg);
 			$(".login-reg").append(ospan);
-
 			$(".userspan").html(localStorage.getItem("username"));
 			$(".userImg").attr("src","../img/775.jpg")
 			user()
-		
-		$(".userout").click(function(){
+			$(".userout").click(function(){
 						$(".login-reg").remove()
 						$(".usermage").remove()
 						$(".login-reg-btn").append(ologin);

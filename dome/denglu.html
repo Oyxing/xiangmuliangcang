@@ -42,10 +42,13 @@
 							success : function(data){
 								var obj = JSON.parse(data)
 							    var	code = obj.code;
+							    var token = obj.data.token
 							    switch (code){
 							    	case 0:
 							    window.localStorage.setItem("username",username)    	
 							    window.localStorage.setItem("code",code)    	
+							    window.localStorage.setItem("token",token)    	
+
 							    	alert("用户"+username+"登陆成功");
 									location.href="../liangcang.html?username="+username;	
 							    		break;

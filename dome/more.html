@@ -328,7 +328,7 @@
 					<div class="optCon">
 					</div>
 					<a href="#" target="_blank"><img src="<%= goods_thumb%>" alt="<%= goods_desc%>" /></a>
-					<a href="#" style="" class="goodsInfo" target="_blank">
+					<a href="magnifying.html?<%= goods_id %>" style="" class="goodsInfo" target="_blank">
 					<!--如果是站内支付商品且没有达人推荐的话,获取品牌的信息 -->
 						<p class="recInfo"><img src="<%= goods_thumb%>" /><%= goods_name%></p>
 						<p class="money"><%= price%></p>
@@ -350,6 +350,7 @@
   <script src="../js/liangcang.js" charset="utf-8"></script>
 	<script src="../js/index.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../js/more.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/denglu.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 				//搜索
 				console.log($(".seek"))

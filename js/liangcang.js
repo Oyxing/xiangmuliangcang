@@ -84,19 +84,22 @@ $.ajax({
 	type: 'get',
 	success: function(data) {
 		var obj = JSON.parse(data).data
+	
 		$.each(obj, function(index, vl) {
 			var objStr = plateStr(vl);
+			console.log(index)
 			var domobj = $(objStr);
 			$(".shopListCon").append(domobj);
 
-			$(".item").eq(1).addClass("item")
 		})
 	}
 })
+	
 
 //吸顶
 $(window).scroll(function() {
 	var foot = $(window).scrollTop();
+	console.log(foot)
 	if(foot > 50) {
 		$(".switchover").css({
 			"position": "fixed",

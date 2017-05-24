@@ -44,12 +44,14 @@
 								$.ajax({
 							        url:"http://h6.duchengjiu.top/shop/api_user.php",
 							        type: 'post',
-							        data:{"status"var obj = JSON.parse(data)
+							        data:{"status":"register","username":username,"password":password},
+							      success : function(data){   
+							        var obj = JSON.parse(data)
 							            var	code = obj.code;
 							            if(code == 0){
 									        location.href="denglu.html";	
-							            }:"register","username":username,"password":password},
-							      success : function(data){   
+							            }
+
 							        }   
 							      })
 							}else{

@@ -9,90 +9,24 @@
 				list-style: none;
 				text-decoration: none;
 			}	
-			#magnif{width: 1000px;margin: 0 auto;}
-
-			#maga-tu{background: url(img/257377.jpg)no-repeat;background-size: 100%; width: 350px;height: 350px;position: absolute;}
-			#maga-tu-1{width: 100%;height: 100%;}
-			.maga-zi{width: 350px;height: 350px;position: absolute;margin-left: 400px;margin-top: -350px;}
-			.tijiao{margin-top: 600px;margin-left: 25px;}
-			#maga-mirror{background-color: white;opacity: 0.5; z-index: 100;/*display: none;*/width: 175px;height: 175px;position: absolute;border: 1px solid black;}
-			#maga-mirr{background: url(img/257377.jpg)no-repeat; overflow: hidden; z-index: 100;display: none;width: 175px;height: 175px;position: absolute;margin-left: 370px;border: 1px solid black;}
-			.buy{width: 303px;height: 45px;background-color: black;color: white;}
-			.join{width: 150px;height: 45px;background-color: black;color: white;}
-			.share{width: 150px;height: 45px;background-color: black;color: white;}
-		</style>
+			</style>
 	</head>
 
 	<body>
 	<div id="main">
-		<div id="magnif">
-			<div id="maga-tu">
-				<!--放大镜-->
-				<div id="maga-mirror">
-
-				</div>
-			</div>
-			<!--显示-->
-				<div id="maga-mirr">
-
-				</div>
-			<div class="maga-zi">
-				<div class="tijiao">
-				<input type="button" name="" class="buy" value="立即购买" />		
-				<input type="button" name="" class="join" value="加入购物车" />		
-				<input type="button" name="" class="share" value="分享" />		
-		
-				</div>
-			</div>
-				
-			</div>
-		</div>
-		
-		
 		
 	</div>
+		
+		
+		
+
 	
 	</body>
 	<script src="js1/jquery.js" type="text/javascript" charset="utf-8"></script>
     <script src="http://apps.bdimg.com/libs/underscore.js/1.7.0/underscore-min.js" charset="utf-8"></script>
  	<script src="js/more.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
-			var small = document.getElementById("maga-tu");
-			var fdj = document.getElementById("maga-mirror");
-			var bej = document.getElementById("maga-mirr");
-			small.onmouseover=function(){
-				fdj.style.display="block";
-				bej.style.display="block"
-			}
-			small.onmouseout=function(){
-				fdj.style.display="none";
-				bej.style.display="none"
-			}
-			/*移动事件
-			* 鼠标移动 放大镜跟着移动，鼠标在放大镜中心 X Y是放大镜相对于小图的left top
-			*/
-		small.onmousemove=function(){
-			var e=event||arguments[0];
-			var x=e.clientX-small.offsetLeft-fdj.offsetWidth/2;
-			var y=e.clientY-small.offsetTop-fdj.offsetHeight/2;
-			if(x<=0){
-				fdj.style.left=0+"px";
-			}else if(x>=small.offsetWidth-fdj.offsetWidth){
-				fdj.style.left=small.offsetWidth-fdj.offsetWidth+"px";
-			}else{
-				fdj.style.left=x+"px";
-			}	
-			if(y<=0){
-				fdj.style.top=0+"px";
-			}else if(y>=small.offsetHeight-fdj.offsetHeight){
-				fdj.style.top=small.offsetHeight-fdj.offsetHeight+"px";
-			}else{
-				fdj.style.top=y+"px";
-			}
-			var wk=350/280;
-			var hk=350/280;
-			bej.style.backgroundPosition=wk*(-fdj.offsetLeft)+"px"+" "+hk*(-fdj.offsetTop)+"px";
-			}
+		
 	</script>
 
 </html>

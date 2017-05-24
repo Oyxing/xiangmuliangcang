@@ -236,7 +236,7 @@
 								<img src="<%= goods_thumb %>" title="<%= goods_desc %>"/>
 							</a>
 							<!--链接放上去弹出价格和介绍-->
-							<a href="#" class="goodsInfo">
+							<a href="dome/magnifying.html?<%= goods_id %>=<%= goods_name %>" class="goodsInfo">
 								<p class="money"><%= price %></p>
 								<p class="tle"><%= goods_name %></p>
 								<p class="desc"><%= goods_desc %></p>
@@ -286,7 +286,7 @@
 
 		</script>
 		<script type="text/javascript">
-	
+				console.log(localStorage.getItem("token"))
 		</script>
 		
 </html>

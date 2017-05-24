@@ -1,0 +1,24 @@
+#magnif{width: 1000px;margin: 0 auto;}
+
+.maga-like{width: 100px;line-height: 10px;}
+.maga-like img{width: 20px;height: 20px;}
+.maga-name{width: 325px;height: 50px;font-size: 20px;text-align: center;}
+#maga-tu-1{width: 100%;height: 100%;}
+.maga-zi{width: 350px;height: 350px;position: absolute;margin-left: 400px;}
+.maga-money span{width: 100px;}
+#maga-mirror{ background-color: white;opacity: 0.5; z-index: 100;display: none;width: 175px;height: 175px;position: absolute;border: 1px solid black;}
+.maga-zi-1{width: 325px;height: 257px;}
+.add1,.plus,.subtr{width: 30px;height:30px;margin-top: -40px;text-align: center;position: absolute;line-height: 22px;}
+.add1{margin-left: 64px;line-height: 30px;text-align: center;}
+.plus{outline: none;background-color: dimgrey;font-size: 15px;margin-left: 95px;cursor: pointer;}
+.subtr{outline: none; background-color: dimgrey;font-size: 15px;margin-left: 32px;cursor: pointer;}
+.buy{width: 325px;height: 45px;background-color: black;color: white;}
+.join,.share{width: 160px;margin-top: 10px; height: 45px;background-color: black;color: white;}
+.succe{ background-size: 100%; width: 431px;height: 93px;border-radius:20px 20px 20px 20px;border: 1px solid black; background: url(../img/pop_bg_header.png)no-repeat; position: absolute;z-index: 100; margin-left: 470px;margin-top: 265px;}
+.succe-die{cursor: pointer;width:33px;height: 33px;border-top-right-radius: 20%;}
+.succe-zi{width: 431px;height: 60px;background-color: white;position: absolute;margin-top: 33px;border-radius: 0 0 20px 20px;line-height: 60px;text-align: center;}
+#succe{display: none;width: 100%;height: 100%;background: rgba(0,0,0,0.5);position: absolute;z-index: 100;}
+.comm{width:320px;height: 100px;background-color:red;position: relative;}
+.comm-img{width: 80px;height: 80px;float: left;margin-top: 10px;margin-left: 5px;}
+.comm-zi{width: 240px;margin-left: 80px;position: absolute;margin-top: 11px;}
+.comm-num{width: 28px; position: absolute; margin-top: 36px; margin-left: 89px;}
