@@ -30,17 +30,16 @@ $(".ul1 li").mousemove(function() {
 
 //轮播图
 var templateStr = $("#template").html();
-console.log(templateStr);
 var tempStr = _.template(templateStr);
 $.ajax({
 	url: "http://lc.shudong.wang/api_ad.php?position_id=1",
 	type: 'get',
 	success: function(data) {
-		var obj = JSON.parse(data).data;
-		$.each(obj, function(index,vl) {
-			console.log(vl)
+		var obj = JSON.parse(data).data
+		//								        		console.log(obj)
+		$.each(obj, function(index, vl) {
 			var dataStr = tempStr(vl);
-			console.log(dataStr)
+			//															console.log(dataStr)
 			var domobj = $(dataStr);
 			$(".bander-tu").append(domobj);
 		})
@@ -55,8 +54,8 @@ $.ajax({
 //创建div
 //shop
 
-var arr = ["家居", "家具", "文具", "数码", "玩乐", "厨卫", "美食", "男装", "女装", "童装", "鞋包", "配饰", "美护", "户外", "植物", "图书", "艺术", "礼物", "推荐"]
-var arrImg = ["img/23687.png","img/23685.png","img/23686.png","img/23683.png","img/23682.png","img/23684.png","img/23680.png","img/23679.png","img/23678.png","img/23677.png","img/23676.png","img/23675.png","img/23681.png","img/23674.png","img/23671.png","img/23668.png","img/23672.png","img/23669.png","img/23670.png"]
+var arr = ["家居", "家具", "文具", "数码", "玩乐", "厨卫", "美食", "男装55", "女装", "童装", "鞋包", "配饰", "美护", "户外", "植物", "图书", "艺术", "礼物", "推荐"]
+var arrImg = ["../img/23687.png","../img/23685.png","../img/23686.png","../img/23683.png","../img/23682.png","../img/23684.png","../img/23680.png","../img/23679.png","../img/23678.png","../img/23677.png","../img/23676.png","../img/23675.png","../img/23681.png","../img/23674.png","../img/23671.png","../img/23668.png","../img/23672.png","../img/23669.png","../img/23670.png"]
 	for(var i = 0; i < arr.length; i++) {
 			var oA = document.createElement("a");
 			oA.className = "storenav-a"
@@ -147,11 +146,12 @@ for(var i = 0; i < arr2.length; i++) {
 //商品
 var shoplistStr = $("#shopList").html();
 var plateStr = _.template(shoplistStr);
+var oitem
 $.ajax({
 	url: "http://lc.shudong.wang/api_goods.php?goods_id=0&page=2&pagesize=18",
 	type: 'get',
 	success: function(data) {
-		var obj = JSON.parse(data).data;
+		var obj = JSON.parse(data).data
 		$.each(obj, function(index, vl) {
 			var objStr = plateStr(vl);
 			var domobj = $(objStr);

@@ -12,7 +12,7 @@ var foot
 				$.ajax({
 					url: "http://lc.shudong.wang/api_goods.php?goods_id="+33704,	
 					type: 'get',
-					data:{goods_id:goods_id,},
+					data:{"goods_id":goods_id,},
 					success: function(data) {
 					var obj = JSON.parse(data).data
 						$.each(obj, function(index, vl) {
@@ -25,14 +25,15 @@ var foot
 				})
 				var shoplistStr1 = $("#magnify1").html();
 				var plateStr1 = _.template(shoplistStr1);
-				var oitem
+
 				$.ajax({
 					url: "http://lc.shudong.wang/api_goods.php?goods_id="+33704,	
 					type: 'get',
-					data:{goods_id:goods_id,},
+					data:{"goods_id":goods_id,},
 					success: function(data) {
 					var obj = JSON.parse(data).data
 						$.each(obj, function(index, vl) {
+							console.log(vl)
 							var objStr1 = plateStr1(vl);
 							var domobj1 = $(objStr1);
 							$(".maga-zi-1").append(domobj1);
@@ -86,18 +87,6 @@ var foot
 			}
 		)
 			
-// 添加商品
-  $(".plus").click(function(){
-  var x = $(".add1").text()
-  	x++
-  	$(".add1").text(x)
-  })
-   $(".subtr").click(function(){
-  var x = $(".add1").text()
-  			x--;
- 	if(x == 0){
-  		$(".add1").text("1")	
-  		}else{
-  			$(".add1").text(x)
-  		}
-  })
+
+
+

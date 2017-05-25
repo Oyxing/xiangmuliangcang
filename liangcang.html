@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/bottom.css"/>
     <link rel="stylesheet" type="text/css" href="css/top.css"/>
+    <link rel="stylesheet" type="text/css" href="css/magnifying.css"/>
     <link rel="stylesheet" href="css/liangcang.css">
     <title><Link rel="shortcut icon" href="../../img/level_tworvice/blizzard.png"><img src="img/favicon.ico"/></title>
   </head>
@@ -25,18 +26,19 @@
           		</div>	
           	</li>
           	<li class="line"></li>
-          	<li class="cart-wrapper"style="width: 36px;height: 55px;"><a href="#" >购物车</a>
+            	<li class="cart-wrapper"style="width: 43px;height: 55px;"><a href="#" >购物车</a>
           			<div class="cart dropbox">
+          				
           					<div class="carts">
-          							<p>你的购物车暂无商品....</p>
+
           					</div>
           					<div class="shop">
-          							<a href="#" class="shop">快去抢购粮仓商品吧!</a>
+          							<a href="#" class="shop">查看购物车</a>
           					</div>
           			</div>
           	</li>
           	<li class="line"></li>
-          	<li class="posr"style=" width: 24px;height: 56px;"><a href="#">消息</a>
+          	<li class="posr" style=" width: 43px;height: 56px;"><a href="#">消息</a>
           		<div class="posrnav dropbox">
           				<a href="#"><span>动态</span></a>
           				<a href="#"><span>评论</span></a>
@@ -71,15 +73,20 @@
 		<ul class="ul2 fl">
 			<li class="onepage" style="display:none;"></li>
 			<li class="store"	style="display: none;">
-				<div class="shangbiao">
+				<div class="shangbiao1" style="width: 710px;">
 					
+				</div>
+				<div class="shangbiao">
+						<img src="img/315574.jpg" style="width: 100%;" title="新视线: 2517年7月上线"/>
+						<p>新视线: 2017年7月上线</p>
 				</div>
 			</li>
 			<li class="magazine" style="display: none;"></li>
 			<li class="share" style="display: none;"></li>
 			<li class="expert"></li>
 		</ul>
-   </header>
+
+    </header>
 			<!--轮播-->
 		<div id="bander">
 			   		<div id="bander-right"></div>
@@ -214,12 +221,14 @@
 			</div>
 		</div>
 		<!--轮播图-->
-		<script type="text/template"  id="template">
+		<script type="text/template" id="template">
 							<li>
-							<a href="<%= thumb %>">
-							<img src="<%= url %>"/>
-							</a></li>
+								<a href="<%= thumb %>">
+								<img src="<%= url %>"/>
+								</a>
+							</li>
 		</script>
+		<!---->
 		<script type="text/template"  id="template1">
 							<div class="storenav">
                 <a href="#"><img class="storenav-tu" src="#" alt="">
@@ -227,12 +236,14 @@
                 </a>
         			</div>
 		</script>
+		<!--下面商品-->
 		<script type="text/template" id="shopList">
 			<div class="item first">
 						<div class="imgCon">
 							<div class="opCon"></div>
 							<!--图片和链接-->
 							<a href="#">
+
 								<img src="<%= goods_thumb %>" title="<%= goods_desc %>"/>
 							</a>
 							<!--链接放上去弹出价格和介绍-->
@@ -254,14 +265,41 @@
 							<a href="#" class="goodsFavCount"><%= sort_order %></a>
 						</div>
 		</script>
+		<!--购物车-->
+			<script type="text/template" id="shopping">
+				<a href="#">
+	          	<div class="comm" style="cursor: pointer;">
+	          		<div class="comm-img">
+	          			<img style="width: 100%;height: 100%;" src="<%=  goods_thumb%>"/>
+	          	</div>
+	          	<!--介绍-->
+	          		<div class="comm-zi">
+	          				<%= goods_name%>
+	          	</div>
+	          	<!--个数-->
+	          <div class="comm-num">
+	          	<%= goods_number %>
+	       	</div>
+	          			<!--数量-->					
+	        	<div class="comm-numb" style="position: absolute; margin-top: 65px; margin-left: 92px;">
+	          					<span>数量</span>	<%= goods_number %>
+	          		</div>
+	          	<div class="comm-money" style="position: absolute; margin-top: 65px;margin-left: 256px;">
+	          							<!--价格-->
+	          							￥<%= goods_price%>
+	          		</div>
+	          </div>
+				</a>
+			</script>
   	</body>
 
 		<script src="js1/jquery.js" type="text/javascript" charset="utf-8"></script>
-    <script src="http://apps.bdimg.com/libs/underscore.js/1.7.0/underscore-min.js" charset="utf-8"></script>
-    <script src="js/liangcang.js" charset="utf-8"></script>
+		<script src="js1/underscore.js" type="text/javascript" charset="utf-8"></script>
     <script src="js1/fengzhuang_ajax.get.post.js" charset="utf-8"></script>
+    <script src="js/liangcang.js" charset="utf-8"></script>
 		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/denglu.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/shop.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 				//搜索
 				var x = 1;
@@ -286,7 +324,7 @@
 
 		</script>
 		<script type="text/javascript">
-				console.log(localStorage.getItem("token"))
+		
 		</script>
 		
 </html>

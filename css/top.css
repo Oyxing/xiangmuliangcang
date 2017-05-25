@@ -29,31 +29,36 @@ a{color: #000000;}
 .posr{margin-right: 20px;line-height: 30px;}
 .add{margin-right: 10px;line-height: 30px;}
 .line{width: 1px; height: 10px;background-color: #525961;margin-left: -10px;margin-top: 11px;}
-.cart-wrapper .cart{display: none;z-index:1000; width: 320px;height: 100px; background-color: #292F34;color: white; position: absolute;margin-top: 14px;margin-left: -80px;text-align: center;}
+.cart-wrapper .cart{display: none;z-index:1000; width: 320px;height: 100px; background-color: #292F34;color: white; position: absolute;margin-top: 12px;margin-left: -80px;text-align: center;}
 .cart-wrapper:hover .cart-wrapper{background-color: #292F34;}
 .cart-wrapper .cart .shop{width: 320px;height: 50px;background-color: blue;color: white;line-height: 50px;text-align: center;}
-.posr .posrnav {display: none; position: absolute;z-index:1000;width: 160px;height:260px;background-color: #292F34;margin-top: 13px;margin-left: -55px;}
+.posr .posrnav {display: none; position: absolute;z-index:1000;width: 160px;height:260px;background-color: #292F34;margin-top: 12px;margin-left: -55px;}
 .posr .posrnav a span{display: inline-block;width:100%;height: 42px;line-height: 44px;padding: 0;border-bottom: 1px solid #3f4449;color: #ccc;font-size: 12px;}
-.switchover{overflow: hidden; width: 1000px;height: 312px;position: relative;top: -24px;margin-left: 13%;}
+.switchover{overflow: hidden; width: 1000px;height: 550px;position: relative;top: -24px;margin-left: 13%;}
 .switchover .ul1{width: 1000px;height: 50px;border-bottom: 5px solid #CCCCCC;line-height: 50px;background-color: white;}
 .switchover	.ul1 li{width: 150px; float: left;font-size: 15px;text-align: center;}
 .switchover	.ul1 .seek{ width: 38px;height: 36px;float: left;margin-left: 216px;margin-top: 4px;background: url(../img/icon.png)no-repeat;background-position: -167px -145px;}
 .switchover	.ul1 .seek-seek{height: 34px;float: left;margin-left: 959px;border: 1px solid white;margin-top: 4px;position: absolute;}
 .switchover	.ul1 .seek-seek1{height: 88%;float: left;border: 1px solid white; outline: none;}
 .switchover	.ul1 .link{width:202px;height: 4px;float: left;border: 1px solid #666666;margin-top: 44px;position: absolute;background-color: #666666;}
-.usermage{display: none; position: absolute;width: 147px; height: 140px;z-index: 1000;margin-top: 44px;}
+.shangbiao{width: 280px;height: 310px;float: right;margin-top: -169px;}
+.usermage{display: none; position: absolute;width: 147px; height: 140px;z-index: 1000;margin-top: 42px;}
 .usermage>a{display: block;width: 160px; height: 44px;padding: 0 15px;line-height: 44px;background: #292f34;cursor: pointer;}
 .usermage>a>span{display: inline-block;width: 100%;height: 43px; line-height: 44px;padding: 0;border-bottom: 1px solid #3f4449;color: #ccc;font-size: 12px;letter-spacing: 1.5px;}
 .usermage>a:hover {background-color: #666666;}
 /*切换*/
-.switchover	.ul2{position: relative;margin-top: -12px; width: 1000px;background-color: #707375;z-index:999;}
+.switchover	.ul2{position: relative;margin-top: -14px; width: 1000px;background-color: #707375;z-index:999;}
 .switchover	.ul2 .store{width: 1000px;height: 355px;position: absolute; z-index: 999;background-color:#1e3544;margin-left: -40px;}
-.switchover	.ul2 .storenav{font-size: 30px;line-height: 80px;text-align: center; width: 80px;height: 80px;background-color: white;margin-left: 20px;margin-top: 20px;}
+.switchover	.ul2 .storenav{ font-size: 13px;text-align: center; width: 80px;background-color: white;margin-left: 20px;margin-top: 40px;}
+.switchover	.ul2 .storenav-a{cursor: pointer;}
 .switchover	.ul2  .storenav-wore{float: left;width: 80px;height: 20px;font-size: 15px;text-align: center;line-height: 20px;margin-top: -15px;}
 .switchover	.ul2 .storenav {float: left;}
 .nav .login-reg-btn .userImg{width: 40px;height: 40px;vertical-align: middle;margin-top: -2px;margin-right: 10px;}
-.ul2 .storenav img{width: 70px;height: 70px;margin-left: 4px;}
+.ul2 .storenav img{width: 70px;height: 80px;margin-left: -49px;margin-top: 2px;}
 .switchover	.ul2 .magazine{width: 1000px;height: 200px;position: absolute; z-index: 999;background-color:white;margin-left: -40px;}
 .switchover	.ul2 .share{width: 1000px;height: 200px;position: absolute; z-index: 999;background-color:white;margin-left: -40px;}
-.switchover	.ul2 .store{width: 1000px;height: 200px;position: absolute; z-index: 999;background-color:white;margin-left: -40px;}
+.switchover	.ul2 .store{width: 1000px;height: 480px;position: absolute; z-index: 999;background-color:white;margin-left: -40px;}
 .switchover	.bom{border-bottom: 5px solid #666666;}
+.storenav-ul3{display: none; border-top: 1px solid yellow;position: absolute;}
+.storenav-ul3 a{float: left;margin-left: 10px;}
+

@@ -2,7 +2,7 @@
 /*轮播*/
 #bander {width: 1000px;height: 475px;border: 1px solid white;
 overflow: hidden;position: absolute;
-margin-top: -246px;margin-left: 175px;}
+margin-top: -246px;margin-left: 13%;}
 #bander img{width:1000px;height: 475px;}
 .bander-tu {width: 9000px;height: 475px;margin-left: 0px;margin-top: 0px;position: relative;left: -40px;}
 .bander-tu  li {float: left;}

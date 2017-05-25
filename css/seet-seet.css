@@ -10,7 +10,7 @@
 
 /*搜索*/
 /*商品内容*/
-#main {width: 1000px;margin: 0 auto;padding-top: 110px;clear: both;}
+#main {width: 1000px;clear: both; margin-top: -100px; margin-left: 13%;}
 #main .styl_3{height: auto;width: 1000px;}
 #main .shopListCon{width: 1000px;float: left; margin: -280px 0px;position: relative;}
 #main .shopListCon div.first {margin-left: 7px;}

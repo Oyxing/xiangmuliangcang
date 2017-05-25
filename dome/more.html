@@ -25,7 +25,7 @@
           		</div>	
           	</li>
           	<li class="line"></li>
-          	<li class="cart-wrapper"style="width: 36px;height: 55px;"><a href="#" >购物车</a>
+          	<li class="cart-wrapper"style="width: 43px;height: 55px;"><a href="#" >购物车</a>
           			<div class="cart dropbox">
           					<div class="carts">
           							<p>你的购物车暂无商品....</p>
@@ -36,7 +36,7 @@
           			</div>
           	</li>
           	<li class="line"></li>
-          	<li class="posr"style=" width: 24px;height: 56px;"><a href="#">消息</a>
+          	<li class="posr"style=" width: 43px;height: 56px;"><a href="#">消息</a>
           		<div class="posrnav dropbox">
           				<a href="#"><span>动态</span></a>
           				<a href="#"><span>评论</span></a>
@@ -71,8 +71,12 @@
 		<ul class="ul2 fl">
 			<li class="onepage" style="display:none;"></li>
 			<li class="store"	style="display: none;">
-				<div class="shangbiao">
+				<div class="shangbiao1" style="width: 710px;">
 					
+				</div>
+				<div class="shangbiao">
+						<img src="../img/315574.jpg" style="width: 100%;" title="新视线: 2517年7月上线"/>
+						<p>新视线: 2017年7月上线</p>
 				</div>
 			</li>
 			<li class="magazine" style="display: none;"></li>
@@ -81,10 +85,10 @@
 		</ul>
    </header>
 	<div class="clr"></div>
-	<div class="shop-s" style="position: absolute;margin-top: -265px;margin-left: 13.5%;">
+	<div class="shop-s" style="position: absolute;margin-top: -490px;margin-left: 13.5%;">
 		<img src="../img/shop.png"/>
 	</div>	
-	<div id="bander-bottom" style="position: absolute;margin-top: 90px;">
+	<div id="bander-bottom" style="position: absolute;margin-top: -130px;">
 	<!--轮播-->
 	<div id="bander">
 		  	<div id="bander-right"></div>
@@ -328,7 +332,7 @@
 					<div class="optCon">
 					</div>
 					<a href="#" target="_blank"><img src="<%= goods_thumb%>" alt="<%= goods_desc%>" /></a>
-					<a href="magnifying.html?<%= goods_id %>" style="" class="goodsInfo" target="_blank">
+					<a href="magnifying.html?<%= goods_id %>=<%= goods_name %>" style="" class="goodsInfo" target="_blank">
 					<!--如果是站内支付商品且没有达人推荐的话,获取品牌的信息 -->
 						<p class="recInfo"><img src="<%= goods_thumb%>" /><%= goods_name%></p>
 						<p class="money"><%= price%></p>
@@ -347,7 +351,8 @@
 	<script src="../js1/jquery.js" type="text/javascript" charset="utf-8"></script>
   <script src="http://apps.bdimg.com/libs/underscore.js/1.7.0/underscore-min.js" charset="utf-8"></script>
   <script src="../js1/fengzhuang_ajax.get.post.js" charset="utf-8"></script>
-  <script src="../js/liangcang.js" charset="utf-8"></script>
+
+  <script src="../js/liangcangdome.js" charset="utf-8"></script>
 	<script src="../js/index.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../js/more.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../js/denglu.js" type="text/javascript" charset="utf-8"></script>

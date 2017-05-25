@@ -83,28 +83,7 @@ $(".ul1 li").mouseout(function() {
 //导航
 //			http://lc.shudong.wang/api_cat.php
 //创建div
-var arr = ["家居", "家具", "文具", "数码", "玩乐", "厨卫", "美食", "男装", "女装", "童装", "鞋包", "配饰", "美护", "户外", "植物", "图书", "艺术", "礼物", "推荐"]
-for(var i = 0; i < arr.length; i++) {
-	var odiv = document.createElement("a");
-	odiv.className = "storenav";
-	odiv.innerHTML = arr[i];
-	$(".store").append(odiv);
-}
 
-var arr1 = ["趣物", "数码", "汽车", "文化", "时尚", "美食", "建筑", "空间", "圈子", "清单", "活动", "视频"];
-for(var i = 0; i < arr1.length; i++) {
-	var odiv = document.createElement("a");
-	odiv.className = "storenav";
-	odiv.innerHTML = arr1[i];
-	$(".magazine").append(odiv);
-}
-var arr2 = ["男士", "家居", "数码", "工具", "玩具", "美容", "孩子", "宠物", "饮食", "文化", "运动", "女士"]
-for(var i = 0; i < arr2.length; i++) {
-	var odiv = document.createElement("a");
-	odiv.className = "storenav";
-	odiv.innerHTML = arr2[i];
-	$(".share").append(odiv);
-}
 
 //商店
 
