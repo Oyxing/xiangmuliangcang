@@ -1,12 +1,4 @@
 .clr{clear: both;}
-/*搜索*/
-#seetshop{position: absolute;margin-top:-365px; width: 1000px;height: 20px;}
-#siftCon { width: 1000px; height: 20px; border-top: 1px solid #ccc;color: #666; text-align: right; padding: 5px 0px; margin-top: -345px; position: absolute; }
-#siftCon .secondClass { position: absolute; top: 0px; left: 0px; display: inline-block; width: 750px; height: 55px; text-align: left; }
-#siftCon .secondClass .clslist { display: inline-block; text-align: center; margin-right: 5px; }
-#siftCon .secondClass .clslist .clsName { height: 20px; padding: 5px 0px; cursor: pointer; display: block; }
-#siftCon .secondClass .current { background: url(../img/arrow_top_o.png) no-repeat bottom center; color: #A9C7E1; }
-#siftCon .secondClass .clslist .clsAmount { height: 20px; padding-top: 5px; display: block; }
 
 /*导航*/
 .osm-bar { margin-top: -345px; margin-left: -20px; width: 1000px; clear: both; float: left; position: relative; font-size: 13px; z-index: 1; } .osm-cls { position: relative; float: left; width: 840px; z-index: 1; }  .osm-price { width: 102px; margin: 10px 0 0; _margin: 11px 0 0; text-align: right; border-bottom: 1px solid #ededed; position: relative; float: right; height: 24px; padding: 20px 18px 5px 0px; position: relative; cursor: pointer; z-index: 1; }  .osm-cls li { float: left; display: block; zoom: 1; position: relative; padding: 6px 20px 5px 0px; height: 25px; border-bottom: 1px solid #ededed; margin: 10px 0px -1px 0px; }  .osm-cls li a.new { background: url(../img/icon.png)no-repeat -173px -584px; text-align: right; }  .osm-cls li a { width: 64px; color: #333; text-align: center; display: block; _display: inline; zoom: 1; margin-top: 1px; height: 24px; _border-bottom: 1px solid #fff; line-height: 24px; vertical-align: middle; }  .osm-price .arrow { display: block; position: absolute; right: 0; top: 20px; width: 12px; height: 20px; zoom: 1; background: url(../img/icon.png)no-repeat -188px -385px; } .osm-bar .osm-price:hover ul{display: block;} .osm-price ul li a:hover {background-color:#333;color: white;} .osm-price ul { display: none; width: 55px; position: absolute; z-index: 100000; right: 0px; top: 36px; border: 1px solid #ededed; background: #fff; } .osm-price ul li a.chk { background: #333; color: #fff; } .osm-price ul li a { display: block; _display: inline; zoom: 1; padding: 0px 10px; width: 75px; height: 39px; color: #666; border-bottom: 1px solid #ededed; line-height: 39px; vertical-align: middle; text-align: left; margin-left: -40px; }

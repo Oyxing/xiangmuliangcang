@@ -18,22 +18,24 @@
           </div>
           <ul class="nav fr" id="nav">
           	<li	class="login-reg-btn">
+
           		<div class="usermage">
           			<a href="#" class="userset"><span>个人设置</span></a>
           			<a href="#" class="usermasage"><span>收到信息</span></a>
           			<a href="#" class="userinent"><span>我的订单</span></a>
           			<a href="#" class="userout"><span>退出</span></a>
           		</div>	
+          		<a href="dome/denglu.html" class="loginbtn" style="color: white;">登录</a>
+          		<a href="dome/zhuce.html" class="regbtn" style="color: white;" >注册</a>
+          		
           	</li>
           	<li class="line"></li>
             	<li class="cart-wrapper"style="width: 43px;height: 55px;"><a href="#" >购物车</a>
           			<div class="cart dropbox">
-          				
           					<div class="carts">
-
           					</div>
           					<div class="shop">
-          							<a href="#" class="shop">查看购物车</a>
+          							<a href="dome/indent.html" class="shop">查看购物车</a>
           					</div>
           			</div>
           	</li>
@@ -300,6 +302,7 @@
 		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/denglu.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/shop.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/ceiling.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 				//搜索
 				var x = 1;
@@ -321,10 +324,25 @@
 						$("#seektxt").val("");
 					}
 				})			
-
 		</script>
-		<script type="text/javascript">
 		
+		<!--退出登录-->
+		<script type="text/javascript">
+				$(".userout").click(function(){
+						localStorage.clear();
+						location.href = "liangcang.html"
+						$(".login-reg").remove()
+						$(".usermage").remove()
+						$(".login-reg-btn").append(ologin);
+						$(".login-reg-btn").append(oreg);
+						$(".loginbtn").html("登录");
+						$(".regbtn").html("注册");				
+						$(".regbtn").attr("href","dome/zhuce.html");		
+						$(".loginbtn").attr("href","dome/denglu.html");	
+						$(".loginbtn").css({"color":"white","cursor": "pointer"})
+						$(".regbtn").css({"color":"white","cursor": "pointer","margin-left": "16px"})
+			
+					})
 		</script>
 		
 </html>

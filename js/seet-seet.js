@@ -88,34 +88,6 @@ $(".ul1 li").mouseout(function() {
 //商店
 
 
-//吸顶
-$(window).scroll(function() {
-	var foot = $(window).scrollTop();
-	if(foot > 50) {
-		$(".switchover").css({
-			"position": "fixed",
-			"top": "-12px",
-			"z-index": "999"
-		});
-		$(".seek-seek").hide()
-		$("#backtop").show();
-	} else {
-		$(".switchover").css({
-			"position": "",
-			"top": "-24px",
-			"left": "0px"
-		});
-		$("#backtop").hide();
-		$(".seek-seek").show()
-	}
-})
-$(window).scroll(function() {
-	var foot = $(window).scrollTop();
-	$("#backtop").click(function() {
-		$(window).scrollTop(0);
-	})
-})
-
 //尾巴
 //微信
 $(".weixin").mouseover(function() {

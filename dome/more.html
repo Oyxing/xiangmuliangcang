@@ -5,6 +5,8 @@
    <link rel="stylesheet" type="text/css" href="../css/bottom.css"/>
    <link rel="stylesheet" href="../css/more.css">
    <link rel="stylesheet" type="text/css" href="../css/top.css"/>
+   <!--购物车-->
+   <link rel="stylesheet" type="text/css" href="../css/magnifying.css"/>
    <title><Link rel="shortcut icon" href="../../img/level_tworvice/blizzard.png"><img src="img/favicon.ico"/></title>
   </head>
   <body>
@@ -23,15 +25,23 @@
           			<a href="#" class="userinent"><span>我的订单</span></a>
           			<a href="#" class="userout"><span>退出</span></a>
           		</div>	
+          		<a href="denglu.html" class="loginbtn" style="color: white;">登录</a>
+          		<a href="zhuce.html" class="regbtn" style="color: white;" >注册</a>
+        
           	</li>
           	<li class="line"></li>
           	<li class="cart-wrapper"style="width: 43px;height: 55px;"><a href="#" >购物车</a>
           			<div class="cart dropbox">
-          					<div class="carts">
+          				<!--	<div class="carts">
           							<p>你的购物车暂无商品....</p>
           					</div>
           					<div class="shop">
           							<a href="#" class="shop">快去抢购粮仓商品吧!</a>
+          					</div>-->
+          				<div class="carts">
+          					</div>
+          					<div class="shop">
+          							<a href="indent.html" class="shop">查看购物车</a>
           					</div>
           			</div>
           	</li>
@@ -346,16 +356,43 @@
 			</div>
 
 	</script>
+	<!-- 购物车-->
+	<script type="text/template" id="shopping">
+				<a href="#">
+	          	<div class="comm" style="cursor: pointer;">
+	          		<div class="comm-img">
+	          			<img style="width: 100%;height: 100%;" src="<%=  goods_thumb%>"/>
+	          	</div>
+	          	<!--介绍-->
+	          		<div class="comm-zi">
+	          				<%= goods_name%>
+	          	</div>
+	          	<!--个数-->
+	          <div class="comm-num">
+	          	<%= goods_number %>
+	       	</div>
+	          			<!--数量-->					
+	        	<div class="comm-numb" style="position: absolute; margin-top: 65px; margin-left: 92px;">
+	          					<span>数量</span>	<%= goods_number %>
+	          		</div>
+	          	<div class="comm-money" style="position: absolute; margin-top: 65px;margin-left: 256px;">
+	          							<!--价格-->
+	          							￥<%= goods_price%>
+	          		</div>
+	          </div>
+				</a>
+			</script>
   	</body>
 
 	<script src="../js1/jquery.js" type="text/javascript" charset="utf-8"></script>
   <script src="http://apps.bdimg.com/libs/underscore.js/1.7.0/underscore-min.js" charset="utf-8"></script>
   <script src="../js1/fengzhuang_ajax.get.post.js" charset="utf-8"></script>
-
   <script src="../js/liangcangdome.js" charset="utf-8"></script>
 	<script src="../js/index.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../js/more.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../js/denglu.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/ceiling.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/shop.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 				//搜索
 				console.log($(".seek"))

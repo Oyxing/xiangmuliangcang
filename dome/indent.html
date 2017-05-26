@@ -23,6 +23,9 @@
           			<a href="#" class="userinent"><span>我的订单</span></a>
           			<a href="#" class="userout"><span>退出</span></a>
           		</div>  
+          		<a href="denglu.html" class="loginbtn" style="color: white;">登录</a>
+          		<a href="zhuce.html" class="regbtn" style="color: white;" >注册</a>
+        
           	</li>
           	<li class="line"></li>
           	<li class="cart-wrapper"style="width: 43px;height: 55px;"><a href="#" >购物车</a>
@@ -91,17 +94,31 @@
 			<div class="shopListCon styl_3" style="margin: -320px auto;">
 				<div class="indent">
 					|   <span>购物车  </span>|
-					<span style="color: black;">付款   </span>|
+					<span style="color: black;">付款  </span>|
 				</div>
-				<div class="indent-inpt">
-							
+				<div class="indent-inpt" style="margin-top: 20px;">
+					<table style="color: #666;" class="indent-shop">
+						<tr>
+							<th style="width: 110px;"><input type="checkbox" class="cartall"  name="" id="" value="" style="margin-left: -55px;margin-right: 10px;"/>全选</th>
+							<th style="width: 300px;">良品</th>
+							<th style="width: 120px;">数量</th>
+							<th style="width: 160px;">单价(元)</th>
+							<th style="width: 160px;">小计(元)</th>
+							<th style="width: 125px;">操作</th>
+						</tr>
+	
+					</table>
 				</div>
-				<div class="indent-in">
+				<div class="shoppcar">
 					
+					<p style="font-size: 14px;">良品价格
+						<font style="font-size: 18px;">/</font>
+						<span class="mone" style="color: #0C6EBA;font-size: 20px;">
+							￥<font class="money-cart">0.00</font></span>
+				</p>
+				<p><input type="button" name="" class="shopind" value="立即结算" /></p>	
 				</div>
-				<div class="indent-ref">
-					
-				</div>
+			
 			<div class="clr"></div>
 				
 			</div>		
@@ -112,7 +129,7 @@
 		<div class="clr"></div>
 		
 		<!--尾部顶2-->
-		<div id="service" style="margin-top: 275px;">
+		<div id="service" style="margin-top: 340px;">
 			<a href="#" class="hand1"><p class="hand"></p></a>
 			<div class="slogen">
 					<dl class="fore1">
@@ -214,36 +231,28 @@
                 </a>
         			</div>
 		</script>
-		<script type="text/template" id="shopList">
-			<!--<div class="item first">
-				<div class="imgCon">
-					<div class="opCon"></div>
-					<!--图片和链接
-					<a href="#">
-						<img src="<%= goods_thumb %>" title="<%= goods_desc %>"/>
-					</a>
-					<!--链接放上去弹出价格和介绍
-					<a href="#" class="goodsInfo">
-						<p class="money"><%= price %></p>
-						<p class="tle"><%= goods_name %></p>
-						<p class="desc"><%= goods_desc %></p>
-					</a>
-				</div>
-				<div class="bar">
-					<!--厂商
-					<a href="#" class="who">
-						<!--log
-						<img src="<%= goods_thumb %>"/>
-						<!--名字
-						<%= goods_name %>
-					</a>
-					<!--喜欢人数
-					<a href="#" class="goodsFavCount"><%= sort_order %></a>
-				</div>-->
-		</script>
   </body>
 		<div class="clr"></div>
-		<script type="text/template" id="shopList1">
+		<script type="text/template" id="indent">
+						<tr>
+								<td><input type="checkbox" name="" class="car_box" value=""/>
+										<a href="#"><img style="width: 70px;height: 70px;" src="<%= goods_thumb%>"/></a>
+								</td>
+								<td style="width: 300px;">
+									<p><%= goods_name%></p>
+									<p><%= goods_number%>个</p>
+								
+								</td>
+								<td style="width: 120px;">
+										<span class="minus"><img src="../img/minus.png"/></span>
+										<input type="text" name="" class="num" value="<%= goods_number%>" readonly />
+										<span class="add1"><img src="../img/add.png"/></span>	
+								</td>
+								<td style="width: 160px;" class="price"><%= goods_price%></td>
+								<td style="width: 160px;" class="extend"><%= goods_price%></td>
+								<td class="del">删除</td>
+						</tr>
+		
 		
 		</script>
 </body>
@@ -255,7 +264,7 @@
 	<script src="../js/denglu.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../js/indent.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../js/liangcangdome.js" type="text/javascript" charset="utf-8"></script>
-		
+		<script src="../js/ceiling.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 				//搜索
 			
