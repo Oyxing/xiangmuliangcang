@@ -16,12 +16,13 @@
 					<div class="succe-die fr">
 						
 					</div>
+					
 					<div class="succe-zi">
 						加入购物车成功
 					</div>
+					
 			</div>
 		</div>
-  	
     <header class="header-top">
         <div class="header">
         	<!--图标-->
@@ -41,14 +42,18 @@
         
           	</li>
           	<li class="line"></li>
-          	<li class="cart-wrapper"style="width: 43px;height: 55px;"><a href="#" >购物车</a>
+          	<li class="cart-wrapper"style="width: 43px;height: 55px;"><a href="indent.html" >购物车</a>
           			<div class="cart dropbox">
-          				
+          					
           					<div class="carts">
-
+          							<div class="comm1">你的购物车暂无商品....</div>	
+          							
+          							
           					</div>
           					<div class="shop">
-          							<a href="indent.html" class="shop">查看购物车</a>
+          							<a href="more.html" class="shop1">快去抢购粮仓商品吧!</a>
+          						
+          							<a href="indent.html" class="shop2">查看购物车</a>
           					</div>
           			</div>
           	</li>
@@ -68,7 +73,7 @@
           </ul>
         </div>
     </header>
-    <span id="backtop"></span>
+    <span id="backtop"><img src="../img/top.png" style="margin-left: 15px;margin-top: 20px;"/></span>
     <!--切换-->
     <header class="switchover">
     	<ul class="ul1">
@@ -110,7 +115,7 @@
 				<span class="seetshop">>搜索结果>全部商品</span>
 			</div>
 
-			<div id="siftCon"></div>
+			<div id="siftCon" style="border-bottom: 0px;"></div>
 
 					<div id="magnif" style="margin: -326px auto;">
 						<div id="maga-tu" >
@@ -247,8 +252,8 @@
 		<!--放大镜css-->
 		<script type="text/template" id="magnify">
 				<style type="text/css">
-				#maga-tu{cursor: -webkit-zoom-in;background: url(<%=  goods_thumb%>)no-repeat;background-size: 100%; width: 350px;height: 350px;position: absolute;}
-				#maga-mirr{ background: url(<%=  goods_thumb%>)no-repeat;background-size: 200%; overflow: hidden; z-index: 100;display: none;width:175px;height:175px;position: absolute;margin-left: 370px;border: 1px solid #CCCCCC;}	
+				#maga-tu{cursor: -webkit-zoom-in;background: url(<%=  goods_thumb%>)no-repeat;background-size: 350px 350px; width: 350px;height: 350px;position: absolute;}
+				#maga-mirr{ background: url(<%=  goods_thumb%>)no-repeat;background-size:700px 700px; overflow: hidden;border-radius: 50%; z-index: 100;display: none;width:175px;height:175px;position: absolute;margin-left: 370px;border: 1px solid #CCCCCC;}	
 				</style>	
 		</script>
 		<!--介绍-->

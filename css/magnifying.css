@@ -6,7 +6,7 @@
 #maga-tu-1{width: 100%;height: 100%;}
 .maga-zi{width: 350px;height: 350px;position: absolute;margin-left: 400px;}
 .maga-money span{width: 100px;}
-#maga-mirror{ background-color: white;opacity: 0.5; z-index: 100;display: none;width: 175px;height: 175px;position: absolute;border: 1px solid black;}
+#maga-mirror{ background-color: white;opacity: 0.5; z-index: 100;display: none;width: 80px;height: 80px;border-radius: 50%; position: absolute;border: 1px solid black;}
 .maga-zi-1{width: 325px;height: 257px;}
 .add1,.plus,.subtr{width: 30px;height:30px;margin-top: -40px;text-align: center;position: absolute;line-height: 22px;}
 .add1{margin-left: 64px;line-height: 30px;text-align: center;}
@@ -23,3 +23,9 @@
 .comm-img{width: 80px;height: 80px;float: left;margin-top: 10px;margin-left: 5px;}
 .comm-zi{width: 240px;margin-left: 80px;position: absolute;margin-top: 11px;}
 .comm-num{width: 28px; position: absolute; margin-top: 36px; margin-left: 89px;}
+.comm1{width: 320px;
+    height: 50px;
+    background-color: #25292e;
+    color: white;
+    line-height: 40px;
+    border-bottom: 1px solid white;}

@@ -10,6 +10,7 @@
 }
 .indent-inpt .car_box{position: absolute;margin-left: -15px;}
 .minus,.add1,.del {cursor: pointer;}
-.num{width: 24px;height: 18px;text-align: center;border: 1px solid white;}
+.num{width: 50px;height: 18px;text-align: center;border: 1px solid white;}
 .shoppcar{width: 100%;clear: both;text-align: center;}
-.shopind{width: 160px;height: 30px;background-color: #7fa6c5;color: white;border: 1px solid #7fa6c5 ;}
+.shopind{cursor: pointer;width: 160px;height: 30px;background-color: #7fa6c5;color: white;border: 1px solid #7fa6c5 ;}
+.add2{line-height: 30px;text-align: center;}

@@ -33,7 +33,6 @@ $(".succe-die").click(function(){
   		}
   })
 //加入购物车
-
 var shoplateStr = $("#shopping").html();
 var shopStr = _.template(shoplateStr);
 var token = localStorage.getItem("token")

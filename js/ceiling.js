@@ -2,22 +2,47 @@
 $(window).scroll(function() {
 	var foot = $(window).scrollTop();
 	console.log(foot)
+//	if(foot > 30) {
+//		$(".switchover").css({
+//			"position": "fixed",
+//			"top": "-13px",
+//			"z-index": "100",
+//			"clear":"both",
+//		});
+//		$(".seek-seek").fadeOut()
+//		$("#backtop").fadeIn();
+//	} else {
+//		$(".switchover").css({
+//			"position": "relative",
+//			"top": "-24px",
+//			"left": "0px",
+//			"z-index": "100",
+//			"clear": "both",	
+//		});
+//		
+//		
+//		$("#backtop").fadeOut();
+//		$(".seek-seek").fadeIn()
+//	}
 	if(foot > 30) {
-		$(".switchover").css({
+		$(".ul1").css({
 			"position": "fixed",
 			"top": "-13px",
-			"z-index": "100",
+			"left": "175px",
+			"z-index": "99",
 			"clear":"both",
 		});
 		$(".seek-seek").fadeOut()
 		$("#backtop").fadeIn();
 	} else {
-		$(".switchover").css({
+		$(".ul1").css({
 			"position": "relative",
-			"top": "-24px",
+			"top": "0px",
 			"left": "0px",
-			"clear": "both",	
+			"z-index": "99",
 		});
+		
+		
 		$("#backtop").fadeOut();
 		$(".seek-seek").fadeIn()
 	}

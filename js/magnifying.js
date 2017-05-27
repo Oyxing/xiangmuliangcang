@@ -59,14 +59,12 @@ var foot
 			/*移动事件
 			* 鼠标移动 放大镜跟着移动，鼠标在放大镜中心 X Y是放大镜相对于小图的left top
 			*/
-		$(window).scroll(function() {
-					 foot = $(window).scrollTop();
-							console.log(foot)
-						})	
+		
 		$("#maga-tu").mousemove(function(){
 			var e=event||arguments[0];
+			var foot1 = $(window).scrollTop();
 			var x=e.clientX-small.offsetLeft-fdj.offsetWidth/2;
-			var y=e.clientY-small.offsetTop-fdj.offsetHeight/2;
+			var y=e.clientY+foot1-small.offsetTop-fdj.offsetHeight/2;
 			if(x<=0){
 				$("maga-mirror").css({"left":"0px"})
 			}else if(x>=small.offsetWidth-fdj.offsetWidth){
@@ -81,8 +79,8 @@ var foot
 			}else{
 				fdj.style.top=y+"px";
 			}
-			var wk=350/350;
-			var hk=350/350;
+			var wk=700/350;
+			var hk=700/350;
 			bej.style.backgroundPosition=wk*(-fdj.offsetLeft)+"px"+" "+hk*(-fdj.offsetTop)+"px";
 			}
 		)

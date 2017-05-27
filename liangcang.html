@@ -18,7 +18,6 @@
           </div>
           <ul class="nav fr" id="nav">
           	<li	class="login-reg-btn">
-
           		<div class="usermage">
           			<a href="#" class="userset"><span>个人设置</span></a>
           			<a href="#" class="usermasage"><span>收到信息</span></a>
@@ -27,15 +26,18 @@
           		</div>	
           		<a href="dome/denglu.html" class="loginbtn" style="color: white;">登录</a>
           		<a href="dome/zhuce.html" class="regbtn" style="color: white;" >注册</a>
-          		
           	</li>
           	<li class="line"></li>
-            	<li class="cart-wrapper"style="width: 43px;height: 55px;"><a href="#" >购物车</a>
+            	<li class="cart-wrapper"style="width: 43px;height: 55px;"><a href="dome/indent.html" >购物车</a>
           			<div class="cart dropbox">
           					<div class="carts">
+          							<a href="#">
+          							<div class="comm1">你的购物车暂无商品....</div>	
+          							</a>
           					</div>
           					<div class="shop">
-          							<a href="dome/indent.html" class="shop">查看购物车</a>
+          							<a href="dome/more.html"  class="shop1">快去抢购粮仓商品吧!</a>
+          							<a href="dome/indent.html" class="shop2">查看购物车</a>
           					</div>
           			</div>
           	</li>
@@ -55,7 +57,8 @@
           </ul>
         </div>
     </header>
-    <span id="backtop"></span>
+    <span id="backtop"><img src="img/top.png" style="margin-left: 15px;margin-top: 20px;"/></span>
+  
     <!--切换-->
     <header class="switchover">
     	<ul class="ul1">
@@ -325,14 +328,16 @@
 					}
 				})			
 		</script>
-		
 		<!--退出登录-->
 		<script type="text/javascript">
 				$(".userout").click(function(){
 						localStorage.clear();
 						location.href = "liangcang.html"
-						$(".login-reg").remove()
+						$(".comm1").show()
+						$(".shop1").show()
 						$(".usermage").remove()
+						$(".comm").hide()
+						$(".shop2").hide()
 						$(".login-reg-btn").append(ologin);
 						$(".login-reg-btn").append(oreg);
 						$(".loginbtn").html("登录");

@@ -18,7 +18,7 @@
 .item .imgCon img {width: 100%;height: 100%;}
 #main .styl_3 .item .imgCon .goodsInfo {width: 316px;height:366px;}
 
-.item .imgCon .goodsInfo {display:none;position: absolute; width: 316px;height:366px;top: 0px;left: 0px;background: url(http://imgs-qn.iliangcang.com/images/default/shadow_blk1.png);z-index: 100;_display: inline;zoom: 1;}
+.item .imgCon .goodsInfo {display:none;position: absolute; width: 316px;height:366px;top: 0px;left: 0px;background: url(http://imgs-qn.iliangcang.com/images/default/shadow_blk1.png);_display: inline;zoom: 1;}
 .item .bar .who{white-space: nowrap;text-overflow: ellipsis;width: 216px;overflow: hidden;}
 #main .styl_3 .item .imgCon {height: 316px;}
 

@@ -8,7 +8,7 @@ margin-top: -460px;margin-left: 13%;}
 .bander-tu {width: 9000px;height: 475px;margin-left: 0px;margin-top: 0px;position: relative;left: -40px;}
 .bander-tu  li {float: left;}
 /*下标*/
-.bander-tu-sub {position: absolute; margin-left: 448px;margin-top: 243px;}
+.bander-tu-sub {position: absolute; margin-left: 448px;margin-top: 33px;}
 .bander-tu-sub li {background-color: rgb(204, 204, 204); float: left;width: 20px;height: 5px;border: 1px solid black; line-height: 20px;text-align: center; margin-left: 20px;}
 .bander-tu-sub .sub {background-color: #25292E;}
 #bander-left {z-index: 800; display: none;position: absolute;background: url(../img/normal_right.png)no-repeat center;width: 60px;height: 60px;margin-left: 7px;margin-top: 220px;border-radius:50%;background-color: #000;opacity: 0.5;}
@@ -16,7 +16,7 @@ margin-top: -460px;margin-left: 13%;}
 #bander:hover #bander-left{display: block;}
 #bander:hover #bander-right{display: block;}
 /*轮播图下*/
-#hadv{width: 1000px;height: 403px;margin-top: 270px;margin-left:13%;position: relative;}
+#hadv{width: 1000px;height: 403px;margin-top: 100px;margin-left:13%;position: relative;}
 #hadv .item1{width: 318px;height: 403px;position: absolute;left: 340px;top: 0px;}
 #hadv .item2{width: 317px;height: 190px;position: absolute;}
 .hGCtle {padding: 10px 0px; border-bottom: 1px solid #ccc;text-align: center;color: #333;width: 1000px;margin-left: 13%;}
@@ -33,7 +33,7 @@ margin-top: -460px;margin-left: 13%;}
 .item .imgCon img {width: 100%;height: 100%;}
 #main .styl_3 .item .imgCon .goodsInfo {width: 316px;height:366px;}
 
-.item .imgCon .goodsInfo {display:none;position: absolute; width: 316px;height:366px;top: 0px;left: 0px;background: url(http://imgs-qn.iliangcang.com/images/default/shadow_blk1.png);z-index: 100;_display: inline;zoom: 1;}
+.item .imgCon .goodsInfo {display:none;position: absolute; width: 316px;height:366px;top: 0px;left: 0px;background: url(http://imgs-qn.iliangcang.com/images/default/shadow_blk1.png);_display: inline;zoom: 1;}
 .item .bar .who{white-space: nowrap;text-overflow: ellipsis;width: 216px;overflow: hidden;}
 #main .styl_3 .item .imgCon {height: 316px;}
 

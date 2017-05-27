@@ -12,8 +12,9 @@
 		oreg.className = "regbtn";
 		oA.className = "login-reg";
 		$(".login-reg-btn").css({"color":"white","cursor": "pointer"})
-		
-				if(code == 0){
+			if(code == 0){
+			$(".comm1").hide()
+			$(".shop1").hide()
 			$(".loginbtn").remove()
 			$(".regbtn").remove()
 			$(".login-reg-btn").append(oA)
@@ -23,8 +24,15 @@
 			$(".userImg").attr("src","http://imgs-qn.iliangcang.com/ware/userhead/mid/3/155/634/155634680.jpg?t=1495782091")
 			user()
 			$(".userout").click(function(){
+				localStorage.clear();
+				location.href = "liangcang.html"
 				$(".login-reg").remove()
 				$(".usermage").remove()
+				$(".comm").hide()
+				$(".shop2").hide()
+				$(".comm1").show()
+				$(".shop1").show()
+
 				$(".login-reg-btn").append(ologin);
 				$(".login-reg-btn").append(oreg);
 				$(".loginbtn").html("登录");

@@ -77,7 +77,7 @@ $(".ul1 li").mouseout(function() {
 		var  getval =thisURL.split('?')[1];
 		var showval= getval.split("=")[1];
 		var zhuan=decodeURI(showval);
-		$(".seek-seek1").text(zhuan);
+
 			search(zhuan);
 				}
 //导航
