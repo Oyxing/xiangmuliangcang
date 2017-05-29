@@ -2,7 +2,14 @@
 var goods_id
 var num
 $(".join").click(function(){
+		var code = localStorage.getItem("code")
+		if(code == 0){
 			$("#succe").show();
+		}else{
+			alert("请登录")
+		}
+
+
 		var goodsUrl = document.URL;
 		var goods_one = goodsUrl.substring(goodsUrl.indexOf("?"),goodsUrl.indexOf("="))[1];
 		var goods_end = goodsUrl.substring(goodsUrl.indexOf("="))[0];	

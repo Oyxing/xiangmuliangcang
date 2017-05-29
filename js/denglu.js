@@ -25,7 +25,7 @@
 			user()
 			$(".userout").click(function(){
 				localStorage.clear();
-				location.href = "liangcang.html"
+				location.href = "../liangcang.html"
 				$(".login-reg").remove()
 				$(".usermage").remove()
 				$(".comm").hide()

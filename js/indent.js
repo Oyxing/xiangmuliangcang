@@ -31,10 +31,11 @@ console.log(token)
 				})
 					trolley()
 					addCar()
+					del()
 			}
 	})
 function trolley(){
-	$(".add1").click(function(){
+	$(".add2").click(function(){
 			addtr = $(this).parents("tr");
 			price = parseInt(addtr.find(".price").text());
 			extend = addtr.find(".extend");
@@ -48,7 +49,7 @@ function trolley(){
 			//按键
 			//订单和
 			if(carbox.prop("checked") == true){	
-					addAll()
+				$(".money-cart").text(num*price);  		
 				}
 		})
 	$(".minus").click(function(){
@@ -59,15 +60,18 @@ function trolley(){
 		moneycart = parseInt($(".money-cart").text())
 		carbox = minustr.find(".car_box");
 	  		num--;	
-	 	if(num <= 0){
+	 	if(num < 0){
 	  		minustr.find(".num").val(0);
 	 		extend = addtr.find(".extend").text(0);
 	 	}else{	
 	  		minustr.find(".num").val(num);
-			addtr.find(".extend").text(num*price);			
-	  		}
+			extend = addtr.find(".extend").text(num*price);			
+	  			console.log(extend)
+
+
+	 		}
 	 	if(carbox.prop("checked") == true){
-				addAll()			
+			$(".money-cart").text(num*price);  			
 		}		
 	})  
 	
@@ -95,12 +99,7 @@ function trolley(){
 		}	
 	})
 }
-function addAll(){
-	
-	price += num*price;
-   	$(".money-cart").text(price);  	
-}
-
+//选框加减
 function addCar(){
 	$(".car_box").click(function(){
 		var carboxFar = $(this).parents("tr");
@@ -118,3 +117,22 @@ function addCar(){
 		}
 	})
 }
+
+//删除
+	function del(){
+		
+
+	console.log($(".del"))
+	$(".del").click(function(){
+
+	     var delTr = $(this).parents("tr")
+			console.log(delTr)
+		
+		delTr.remove()
+		
+		
+		
+	})
+	
+	}		
+
